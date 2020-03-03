@@ -1,4 +1,4 @@
-var shoppingList =["Coffee", "peppers" "apple juice"]
+var shoppingList =["Coffee", "peppers" ,"apple juice"]
 
 var itemtwo=shoppingList[1];
 
