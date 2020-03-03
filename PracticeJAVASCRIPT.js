@@ -53,11 +53,28 @@ for (i=0; i<41; i++)
 */
 
 //clock conversion
-var onehour = 60;
+/*var onehour = 60;
 var fivehours = onehour*5;
 var tenhours= onehour*10;
 console.log(fivehours + ' '+'minutes'); 
 console.log(tenhours + ' ' + 'minutes');
+*/
+
+var hotel = {
+hotelName: "the chad",
+    NumberofRooms:40,
+    Roomsbooked:25,
+    RoomType: ["twin", "suite" , "double"],
+
+    getAvilableRooms: function(NumberofRooms, Roomsbooked)
+    {
+        return NumberofRooms - Roomsbooked;
+    }
+
+
+}
+
+
 
 
 
