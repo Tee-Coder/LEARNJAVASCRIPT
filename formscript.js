@@ -1,27 +1,37 @@
 
 
-function validateform()
-if (name =="")
+function validateform(){
+if (document.Biodata.Name.value =="")
 {
-    console.log("field cannot be empty");
+   alert("please provide your name");
+  
 }
-else if (age == "")
+
+else if (document.Biodata.Age.value =="")
 {
-    console.log("field cannot be empty");
+    alert("please provide your age");
 }
-else if (schoolclass == "")
+else if (document.Biodata.schoolclass =="")
 {
-    console.log("field cannot be empty");
+    alert("please provide your current class");
 } 
-else if (city =="")
+else if (document.Biodata.city =="")
 {
-    console.log("field cannot be empty");
+    alert("please provide your current city");
+}
+else if (document.Biodata.Email-address =="")
+{
+    alert("please enter your email address");
 }
 
 else{
-    console.log("fields are accurate");
+    
 }
 
+}
+
+
+/*
 var Biodataform = document.getElementById('Biodata');
 Biodataform.addEventListener('submit', function(event){
     event.preventDefault;
@@ -36,5 +46,8 @@ Biodataform.addEventListener('submit', function(event){
     var schoolclassValue = schoolclassInput.Value;
     var cityValue = cityInput.value;
 
+    console.log(NameValue);
+
 
 });
+*/

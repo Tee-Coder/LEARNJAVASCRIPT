@@ -7,37 +7,43 @@
         <body>
             <h3>Forms new assignment</h3>
 
-            <form id="Biodata" action="#" method="GET">
-                <label for="Name">
+            <form name="Biodata" action="#" method="GET" onsubmit="return(validateform());">
+                <label>
 
                     <input type="text" id="Name"> Enter your name.
 
                 </label>
                 <p>
-                <label for="Age">
+                <label>
 
-                    <input type="text" id="Age"> Please enter your Age.
+                    <input type="text" id="Age"> Enter your Age.
                 </label>
 
                 </p>
 
                 <p>
 
-                <label for="Schoolclass">
-                    <input type="text" id="Schoolclass"> Please enter the school class.
+                <label>
+                    <input type="text" id="Schoolclass"> Enter your class.
                 </label>
 
                 </p>
 
                 <p>
 
-                <label for="city">
-                    <input type="text" id="city"> Please enter your current city.
+                <label>
+                    <input type="text" id="city">Enter your city.
+                </label>
+            </p>
+                
+                <p>
+                <label>
+                    <input type="text" id="Email-address">Enter your Email address.
                 </label>
                 </p>
 
                 <p>
-                    <button>Submit</button>  
+                    <button id="submit">Submit</button>  
                     
                 </p>
 
