@@ -83,6 +83,7 @@
 //     interator++;
 // }
 
+/*
 for(var i=0; i<101; i++) {
     if((i%5 == 0) && (i%3 == 0)) {
        console.log("FizzBuzz");
@@ -139,4 +140,5 @@ for (var i = 0; i < fruits.length; i++){       // prints out the list of items i
 }
 console.log(computerStuff);
 console.log(fruits);
+*/
 

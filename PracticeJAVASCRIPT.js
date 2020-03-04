@@ -59,7 +59,7 @@ var tenhours= onehour*10;
 console.log(fivehours + ' '+'minutes'); 
 console.log(tenhours + ' ' + 'minutes');
 */
- 
+ /*
 var hotel = {
 hotelName: "the chad",
     NumberofRooms:40,
@@ -85,6 +85,34 @@ for(var i = 0; i < 10; i++){
 hotel.Roomsbooked = 30;
 
 console.log(hotel.getAvailableRooms());
+*/
+
+/*
+var x = conversion();
+function conversion()
+{
+    return 20*60;
+}
+console.log(x);
+*/
+/*
+var Person
+{
+    FirstName: "Toyin";
+    LastName: "Iyaomolere";
+    Age: 29;
+
+};
+
+console.log (this.Age);
+*/
+
+form
+
+
+
+
+
 
 
 
