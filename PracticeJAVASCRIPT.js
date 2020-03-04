@@ -59,20 +59,35 @@ var tenhours= onehour*10;
 console.log(fivehours + ' '+'minutes'); 
 console.log(tenhours + ' ' + 'minutes');
 */
-
+ 
 var hotel = {
 hotelName: "the chad",
     NumberofRooms:40,
     Roomsbooked:25,
     RoomType: ["twin", "suite" , "double"],
-
-    getAvilableRooms: function(NumberofRooms, Roomsbooked)
+    getAvailableRooms: function()
     {
-        return NumberofRooms - Roomsbooked;
+        return this.NumberofRooms - this.Roomsbooked;
     }
-
-
 }
+console.log(hotel.getAvailableRooms());
+
+hotel.RoomType.forEach(element => 
+    {
+    console.log(element);
+}
+);
+
+for(var i = 0; i < 10; i++){
+    
+}
+
+hotel.Roomsbooked = 30;
+
+console.log(hotel.getAvailableRooms());
+
+
+
 
 
 
