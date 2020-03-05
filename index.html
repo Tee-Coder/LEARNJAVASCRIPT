@@ -7,44 +7,33 @@
         <body>
             <h3>Forms new assignment</h3>
 
-            <form name="Biodata" action="#" method="GET" onsubmit="return(validateform());">
-                <label for="Name">
-
-                    <input type="text" id="Name"> Enter your name.
-
+            <form name="Biodata" action="#" method="GET">
+                <label for="Name">Enter your name:
+                    <input type="text" id="Name"> 
                 </label>
                 <p>
-                <label for="Age">
-
-                    <input type="text" id="Age"> Enter your Age.
+                <label for="Age"> Enter your Age:
+                    <input type="text" id="Age"> 
                 </label>
-
                 </p>
-
                 <p>
-
-                <label for="Schoolclass">
-                    <input type="text" id="Schoolclass"> Enter your class.
+                <label for="Schoolclass">Enter your class.
+                    <input type="text" id="Schoolclass"> 
                 </label>
-
                 </p>
-
                 <p>
-
-                <label for="city">
-                    <input type="text" id="city">Enter your city.
+                <label for="city">Enter your city.
+                    <input type="text" id="city">
                 </label>
-            </p>
-                
+            </p>                
                 <p>
-                <label for="Email">
-                    <input type="text" id="Email">Enter your Email address.
+                <label for="Email">Enter your Email address.
+                    <input type="text" id="Email">
                 </label>
                 </p>
 
                 <p>
-                    <button id="submit">Submit</button>  
-                    
+                    <button id="submit" onclick="validateform()">Submit</button>                     
                 </p>
 
                 <table>
@@ -57,12 +46,9 @@
                     </thead>
                     <tbody id="form-body">
 
-                    </tbody>
-
-                    
+                    </tbody>                  
 
                 </table>
-
             </form>
         </body>
 </html>

@@ -1,60 +1,57 @@
 
 
-function validateform(){/*
-if (document.Biodata.Name.value =="")
-{
-   alert("please provide your name");
-  
-}
+function validateform() { //non designer's design book, 3rd ed.
 
-else if (document.Biodata.Age.value =="")
-{
-    alert("please provide your age");
-}
+    if (document.Biodata.Name.value == "") {
+        alert("please provide your name");
+    }
 
-else if (document.Biodata.schoolclass =="")
-{
-    alert("please provide your current class");
-} 
+    else if (document.Biodata.Age.value == "") {
+        alert("please provide your age");
+    }
 
-else if (document.Biodata.city =="")
-{
-    alert("please provide your current city");
-}
+    else if (document.Biodata.Schoolclass.value == "") {//Code failed here and the other two conditions below because .value was not included into your condition. Also ensure your ids are same. Used schoolclass instead of Schoolclass
+        alert("please provide your current class");
+    }
 
-else if (document.Biodata.Email =="")
-{
-    alert("please enter your email address");
-}
+    else if (document.Biodata.city.value == "") {
+        alert("please provide your current city");
+    }
 
-else
-*/
-   var Name = document.getElementById("Name").value;
-   var Age = document.getElementById("Age").value;
-   var Schoolclass = document.getElementById("Schoolclass").value;
-   var city = document.getElementById("city").value;
-   var Email = document.getElementById("Email").value;
+    else if (document.Biodata.Email.value == "") {
+        alert("please enter your email address");
+    }
 
-   var InputDetails = [Name, Age, Schoolclass, city, Email];
+    else {
 
-   var tablebody = document.getElementById('form-body');
-   var newRow = document.createElement('tr');
-   
-   for(var c=0; c < InputDetails; c++){
-   var td = document.createElement('td');
-   td.innerHTML = InputDetails(c);
-   newRow.appendChild(td);
-   }
+        var Name = document.getElementById("Name").value;
+        var Age = document.getElementById("Age").value;
+        var Schoolclass = document.getElementById("Schoolclass").value;
+        var city = document.getElementById("city").value;
+        var Email = document.getElementById("Email").value;
 
-tablebody.appendChild(newRow);
+        var InputDetails = [Name, Age, Schoolclass, city, Email];
+
+        var tablebody = document.getElementById('form-body');
+        var newRow = document.createElement('tr');
+
+        for (var c = 0; c < InputDetails.length; c++) { //identified error - InputDetails instead of InputDetails.length 
+            var td = document.createElement('td');
+            td.textContent = InputDetails[c];// used () instead of []. You use [] to access an array.
+            newRow.appendChild(td);
+        }
+
+        tablebody.appendChild(newRow);
 
 
 
-Name= document.getElementById ("Name").value ="";
-Age= document.getElementById ("Age").value ="";
-Schoolclass= document.getElementById ("Schoolclass").value ="";
-Email= document.getElementById ("Email").value ="";
-city= document.getElementById ("city").value ="";
+        Name = document.getElementById("Name").value = "";
+        Age = document.getElementById("Age").value = "";
+        Schoolclass = document.getElementById("Schoolclass").value = "";
+        Email = document.getElementById("Email").value = "";
+        city = document.getElementById("city").value = "";
+    }
+
 }
 
 
