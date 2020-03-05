@@ -8,13 +8,13 @@
             <h3>Forms new assignment</h3>
 
             <form name="Biodata" action="#" method="GET" onsubmit="return(validateform());">
-                <label>
+                <label for="Name">
 
                     <input type="text" id="Name"> Enter your name.
 
                 </label>
                 <p>
-                <label>
+                <label for="Age">
 
                     <input type="text" id="Age"> Enter your Age.
                 </label>
@@ -23,7 +23,7 @@
 
                 <p>
 
-                <label>
+                <label for="Schoolclass">
                     <input type="text" id="Schoolclass"> Enter your class.
                 </label>
 
@@ -31,14 +31,14 @@
 
                 <p>
 
-                <label>
+                <label for="city">
                     <input type="text" id="city">Enter your city.
                 </label>
             </p>
                 
                 <p>
-                <label>
-                    <input type="text" id="Email-address">Enter your Email address.
+                <label for="Email">
+                    <input type="text" id="Email">Enter your Email address.
                 </label>
                 </p>
 
@@ -46,6 +46,22 @@
                     <button id="submit">Submit</button>  
                     
                 </p>
+
+                <table>
+                    <thead id="form-head">
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Schoolclass</th>
+                        <th>city</th>
+                        <th>Email-address</th>
+                    </thead>
+                    <tbody id="form-body">
+
+                    </tbody>
+
+                    
+
+                </table>
 
             </form>
         </body>
